@@ -13,17 +13,11 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     SaveVideo(),
     FindMusic(),
-    Text(
-      'Hashtags',
-      style: optionStyle,
-    ),
-    Text(
-      'Settings',
-      style: optionStyle,
-    ),
+    Hashtags(),
+    Settings(),
   ];
 
   void _onItemTapped(int index) {
